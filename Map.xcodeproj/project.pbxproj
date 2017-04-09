@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB98080F1E7E7C0200739E0A /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98080E1E7E7C0200739E0A /* Annotations.swift */; };
 		FBABBF301E7E70F100475F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABBF2F1E7E70F100475F1E /* AppDelegate.swift */; };
 		FBABBF321E7E70F100475F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABBF311E7E70F100475F1E /* ViewController.swift */; };
 		FBABBF351E7E70F100475F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBABBF331E7E70F100475F1E /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB98080E1E7E7C0200739E0A /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
 		FBABBF2C1E7E70F100475F1E /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBABBF2F1E7E70F100475F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBABBF311E7E70F100475F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB9808101E7E7C0F00739E0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB98080E1E7E7C0200739E0A /* Annotations.swift */,
+				FBABBF2F1E7E70F100475F1E /* AppDelegate.swift */,
+				FBABBF331E7E70F100475F1E /* Main.storyboard */,
+				FBABBF391E7E70F200475F1E /* Assets.xcassets */,
+				FBABBF3B1E7E70F200475F1E /* LaunchScreen.storyboard */,
+				FBABBF3E1E7E70F200475F1E /* Info.plist */,
+				FBABBF361E7E70F200475F1E /* Map.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FB9808111E7E7C2500739E0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBABBF311E7E70F100475F1E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FBABBF231E7E70F100475F1E = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +103,8 @@
 		FBABBF2E1E7E70F100475F1E /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				FBABBF2F1E7E70F100475F1E /* AppDelegate.swift */,
-				FBABBF311E7E70F100475F1E /* ViewController.swift */,
-				FBABBF331E7E70F100475F1E /* Main.storyboard */,
-				FBABBF391E7E70F200475F1E /* Assets.xcassets */,
-				FBABBF3B1E7E70F200475F1E /* LaunchScreen.storyboard */,
-				FBABBF3E1E7E70F200475F1E /* Info.plist */,
-				FBABBF361E7E70F200475F1E /* Map.xcdatamodeld */,
+				FB9808111E7E7C2500739E0A /* Controller */,
+				FB9808101E7E7C0F00739E0A /* Model */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -203,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBABBF321E7E70F100475F1E /* ViewController.swift in Sources */,
+				FB98080F1E7E7C0200739E0A /* Annotations.swift in Sources */,
 				FBABBF301E7E70F100475F1E /* AppDelegate.swift in Sources */,
 				FBABBF381E7E70F200475F1E /* Map.xcdatamodeld in Sources */,
 			);
@@ -410,6 +430,7 @@
 				FBABBF4E1E7E70F200475F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBABBF4F1E7E70F200475F1E /* Build configuration list for PBXNativeTarget "MapTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +439,7 @@
 				FBABBF511E7E70F200475F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
